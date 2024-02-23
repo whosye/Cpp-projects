@@ -1,5 +1,10 @@
-#include<Wire.h>
+/*
+Feedback control using PID regulator with Kalman filter. 
+Sensor MPU6050 with Arduino Nano and two DC motors for balancing robot. 
+Regulating motor PWM frequency to minimaze the error function in term "error = setPoint - previous_angle"
+*/
 
+#include<Wire.h>
 float RateRoll, RatePitch, RateYaw;
 float RollPrevious, PitchPrevious, YawPrevious;
 float Roll, Pitch, Yaw;
