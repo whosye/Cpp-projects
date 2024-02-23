@@ -1,3 +1,5 @@
+// This is WIP project 
+
 
 // Stepper
 #include <AccelStepper.h>
@@ -251,7 +253,7 @@ void clean(){
           Serial.print(" ");
           Serial.println(sensor2.distance);
           if (sensor1.distance<50  || sensor2.distance <50){
-            stepper.stop();
+           
             motor2.turnOffMotor();
             motor1.turnOffMotor();
             servo.write(noClean);
@@ -259,14 +261,14 @@ void clean(){
           }
         }
       } 
-      stepper.stop();
+
       motor2.turnOffMotor();
       motor1.turnOffMotor();
       servo.write(noClean);
       return;
     }else{
       Serial.println("init detekce");
-      stepper.stop();
+ 
       motor2.turnOffMotor();
       motor1.turnOffMotor();
       servo.write(noClean);
@@ -274,7 +276,7 @@ void clean(){
     }
   }
   else{
-    stepper.stop();
+   
     motor2.turnOffMotor();
     motor1.turnOffMotor();
     servo.write(noClean);
