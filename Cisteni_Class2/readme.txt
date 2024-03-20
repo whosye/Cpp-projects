@@ -1,4 +1,4 @@
-#Code for one of the projects
+# Code for one of the projects
 
 Compose:
 	 1 Vibration sensor, 3 DC motors, 2 ultrasonic sensor, 1 servo motor 
